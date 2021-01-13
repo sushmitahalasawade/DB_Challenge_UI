@@ -22,7 +22,7 @@ npm start
 ```
 
 Jest package is used for unit testing.
-Unit test files are written in __Tests__ folder.
+Unit test files are written in \_\_Tests\_\_ folder.
 
 To Test code, run
 
@@ -44,8 +44,8 @@ Time Complexity : O(n)
 
 1. subscribe to websocket connection to read FX prices.
 2. Create table structure in HTML. - define headers.
-3. Global Dictionary dict is created for storing midprice of latest 30 quotes which will be used for sparkline graph.
-4. Global Array ccyArray  is created for maintaining latest 30 ccy pairs.
+3. Variable Dictionary dict with global scope is created for storing midprice of latest 30 quotes which will be used for sparkline graph.
+4. Variable Array ccyArray  with global scope is created for maintaining latest 30 ccy pairs.
 5. Assuming we are recieving a quote per second.
 6. For each quote :
     - Calculate midprice for current quote and push it to dictionary in the format {"ccyPair" : [Array of midprice] }
